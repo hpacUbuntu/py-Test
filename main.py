@@ -1,5 +1,6 @@
 from player import Player
 from weapon import Gun
+import msvcrt
 
 
 def hplayer():
@@ -39,6 +40,7 @@ def startgame(pl, gn):
 def main():
     print("Welcome to my first game!\n")
     startgame(hplayer(), hweapon())
+    msvcrt.getch()
 
 
 main()
